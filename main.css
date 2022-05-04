@@ -1,0 +1,536 @@
+/* Contenedor padre del grid*/
+.div-contenedor {
+
+    display: grid;
+    grid-template-areas: "header"
+        "nav "
+        "main "
+        "footer";
+}
+
+/*Contenedores hijos del grid*/
+.div-header {
+    grid-area: header;
+
+
+}
+
+.div-nav {
+    grid-area: nav;
+}
+
+.div-main {
+    grid-area: main;
+
+}
+
+
+.div-footer {
+    grid-area: footer;
+}
+
+
+
+header {
+
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+
+
+    background-color: green;
+
+}
+
+h1 {
+
+    font-size: 1.5em;
+    font-family: 'Grape Nuts', cursive;
+}
+
+h2 {
+    font-size: 1em;
+    text-align: center;
+    margin-left: .5px;
+    margin-right: .5px;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(54, 66, 199, 0.24);
+    padding: 15px;
+    text-align: center;
+
+
+}
+
+.primera-lista li {
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    font: black;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Grape Nuts', cursive;
+    padding: left 5px;
+    padding: right 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+
+
+}
+
+.segunda-lista li {
+
+    font: black;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Grape Nuts', cursive;
+
+    text-decoration: none;
+
+    display: inline-block;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: .5px;
+    padding-right: .5px;
+    margin-left: .5px;
+    margin-right: .5px;
+    border: .5px;
+
+}
+
+img {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+
+
+
+
+.nav-one {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 80px;
+    padding: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+
+}
+
+
+
+.links--inicio {
+    display: flex;
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: none;
+    list-style-type: none;
+    margin: 2px;
+    padding: 2px;
+}
+
+.links--inicio img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.links--frutas {
+
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: none;
+    list-style-type: none;
+
+}
+
+
+.links--verduras {
+
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.links--miel {
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.envios {
+    background-image: url(img/envios.jpeg);
+
+    font: black;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Grape Nuts', cursive;
+
+
+    list-style-type: none;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+
+.envios-h3 {
+    font: black;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Grape Nuts', cursive;
+
+}
+
+.links--envios {
+    display: flex;
+    color: black;
+    font-size: 1em;
+    font-weight: 700;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+
+
+}
+
+/*parrafos de todos las paginas*/
+p {
+
+    font-family: 'Grape Nuts', cursive;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-left: 0px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+h2 {
+
+    font-size: 1em;
+    font-family: 'Grape Nuts', cursive;
+    text-align: center;
+}
+
+
+
+footer .redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style-type: none;
+    margin-right: 25px;
+    padding-right: 20px;
+
+}
+.redes .red-2 img {
+    width: 32px;
+    height: 25px;
+}
+.redes .red-1 img {
+    width: 25px;
+    height: 25px;
+}
+
+
+/* contenido del foother en todas las paginas*/
+.red-1 {
+    font-family: 'Grape Nuts', cursive;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-right: 25px;
+
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+
+}
+
+.red-2 {
+    font: black;
+    font-family: 'Grape Nuts', cursive;
+    font-size: 1.5em;
+    font-weight: 700;
+
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+
+}
+
+
+@media screen and (min-width: 425px) {
+
+
+    header {
+
+        background: rgb(220, 221, 66);
+        background: linear-gradient(90deg, rgba(220, 221, 66, 1) 1%, rgba(54, 161, 52, 1) 50%, rgba(220, 221, 66, 1) 99%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 82px;
+
+    }
+
+    .div-header h1 {
+        font-size: 4em;
+        font-family: 'Grape Nuts', cursive;
+        color: rgb(3, 3, 3);
+    }
+
+    .primera-lista li {
+        display: inline-block;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        font: black;
+        font-size: 1.5em;
+        font-weight: 600;
+        font-family: 'Grape Nuts', cursive;
+        padding: left 15px;
+        padding: right 15px;
+        margin-right: 15px;
+        text-decoration: none;
+        list-style-type: none;
+        text-align: center;
+
+
+    }
+
+
+    .nav-one {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        height: 80px;
+        padding: 2px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+
+    h2 {
+        display: flex;
+        font-size: 1.8em;
+        font-family: 'Grape Nuts', cursive;
+    }
+
+    .segunda-lista li {
+        display: inline;
+
+        font: black;
+        font-size: 1.3em;
+        font-weight: 700;
+        font-family: 'Grape Nuts', cursive;
+        padding: left 15px;
+        padding: right 15px;
+        margin-right: 10px;
+        margin-left: 5px;
+        text-decoration: none;
+        list-style-type: none;
+        text-align: center;
+
+    }
+
+
+    .links--inicio {
+        display: flex;
+        color: black;
+        font-size: 1.5em;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: none;
+        list-style-type: none;
+        margin: 2px;
+        padding: 2px;
+    }
+
+    .links--inicio img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .links--frutas {
+
+        color: black;
+        font-size: 1.5em;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: none;
+        list-style-type: none;
+
+    }
+
+
+    .links--verduras {
+
+        color: black;
+        font-size: 1.5em;
+        font-weight: 600;
+        list-style-type: none;
+        text-decoration: none;
+        text-align: center;
+
+    }
+
+    .links--miel {
+        color: black;
+        font-size: 1.5em;
+        font-weight: 600;
+        list-style-type: none;
+        text-decoration: none;
+        text-align: center;
+
+    }
+
+    .envios {
+
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+
+        background-image: url(img/envios.jpeg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+
+
+        font: black;
+        font-size: 1.5em;
+        font-weight: 700;
+        font-family: 'Grape Nuts', cursive;
+
+        list-style-type: none;
+        text-decoration: none;
+
+    }
+
+    .envios-h3 {
+        font: black;
+        font-size: 1.5em;
+        font-weight: 700;
+        font-family: 'Grape Nuts', cursive;
+
+    }
+
+
+    .links--envios {
+        display: flex;
+        color: black;
+        font-size: 1.5em;
+        font-weight: 700;
+        list-style-type: none;
+        text-decoration: none;
+        text-align: center;
+
+
+    }
+
+    /*parrafos de todos las paginas*/
+    p {
+
+        font-family: 'Grape Nuts', cursive;
+        font-size: 2em;
+        font-weight: 700;
+        padding-left: 0px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        background-color: orchid;
+
+    }
+
+
+    img {
+        display: inline;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 600px;
+        max-height: 600px;
+    }
+
+    main .envios {
+        max-width: 780px;
+
+        max-height: 780;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .redes .red-1 img {
+    width: 35px;
+    height: 35px;
+    }
+    .redes .red-2 img {
+    width: 42px;
+    height: 35px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+   
+}
